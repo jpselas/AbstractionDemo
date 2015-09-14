@@ -133,11 +133,12 @@ public class AbstractionDemo {
     }while(option <= 3 && option >= 1);    
     
         System.out.println("Your Garage has: ");
+        System.out.println("----------------------------");
     for(int i =0;i<=counter;i++){
         System.out.println(garage[i]);
         
     }
-    
+    System.out.println("----------------------------");
         
     }
     

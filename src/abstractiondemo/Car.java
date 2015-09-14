@@ -79,6 +79,11 @@ public class Car implements Vehicle{
         this.color = color;
     }
 
+    @Override
+    public String toString() {
+        return "Car{" + "year=" + year + ", engineHP=" + engineHP + ", name=" + name + ", manufacName=" + manufacName + ", engineSize=" + engineSize + ", color=" + color + '}';
+    }
+
     
     
 }

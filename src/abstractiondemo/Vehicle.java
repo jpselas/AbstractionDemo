@@ -36,4 +36,6 @@ public interface Vehicle {
     
     public abstract String getColor();
     
+    public abstract String toString();
+    
 }

@@ -23,4 +23,17 @@ public interface Vehicle {
     public abstract String getManufacName();
 
     public abstract void setManufacName(String manufacName);
+    
+    public abstract void setEngineSize(String engineSize);
+    
+    public abstract String getEngineSize();
+    
+    public abstract void setEngineHP(int engineHP);
+    
+    public abstract int getEngineHP();
+    
+    public abstract void setColor(String color);
+    
+    public abstract String getColor();
+    
 }

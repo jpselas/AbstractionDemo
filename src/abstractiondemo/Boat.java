@@ -10,68 +10,78 @@ package abstractiondemo;
  * @author johnny
  */
 public class Boat implements Vehicle{
-
+    private int year;
+    private int engineHP;
+    private String name;
+    private String manufacName;
+    private String engineSize;
+    private String color;
     public Boat() {
     }
 
-    @Override
-    public int getYear() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Boat(int year, int engineHP, String name, String manufacName, String engineSize, String color) {
+        this.year = year;
+        this.engineHP = engineHP;
+        this.name = name;
+        this.manufacName = manufacName;
+        this.engineSize = engineSize;
+        this.color = color;
     }
 
+   @Override
+    public int getYear() {
+        return year;
+    }
     @Override
     public void setYear(int year) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.year = year;
     }
-
-    @Override
-    public String getName() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setName(String name) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public String getManufacName() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setManufacName(String manufacName) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setEngineSize(String engineSize) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public String getEngineSize() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setEngineHP(int engineHP) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     @Override
     public int getEngineHP() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return engineHP;
     }
-
     @Override
-    public void setColor(String color) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setEngineHP(int engineHP) {
+        this.engineHP = engineHP;
     }
-
+    @Override
+    public String getName() {
+        return name;
+    }
+    @Override
+    public void setName(String name) {
+        this.name = name;
+    }
+    @Override
+    public String getManufacName() {
+        return manufacName;
+    }
+    @Override
+    public void setManufacName(String manufacName) {
+        this.manufacName = manufacName;
+    }
+    @Override
+    public String getEngineSize() {
+        return engineSize;
+    }
+    @Override
+    public void setEngineSize(String engineSize) {
+        this.engineSize = engineSize;
+    }
     @Override
     public String getColor() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return color;
     }
+    @Override
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return "Boat{" + "year=" + year + ", engineHP=" + engineHP + ", name=" + name + ", manufacName=" + manufacName + ", engineSize=" + engineSize + ", color=" + color + '}';
+    }
+
+    
     
 }

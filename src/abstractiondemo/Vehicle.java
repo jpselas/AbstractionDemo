@@ -36,6 +36,7 @@ public interface Vehicle {
     
     public abstract String getColor();
     
+    @Override
     public abstract String toString();
     
 }

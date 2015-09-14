@@ -32,7 +32,7 @@ public class AbstractionDemo {
         System.out.println("Welcome to What's in your Garage!");
     
     do{
-        System.out.println("Please select type of vehicle [1]Car [2]Motorcylce [3]Boat ");
+        System.out.println("Please select type of vehicle [1]Car [2]Motorcylce [3]Boat [-1]To Quit");
         option = input.nextInt();
         junk = input.nextLine();
         
@@ -48,21 +48,21 @@ public class AbstractionDemo {
                 junk = input.nextLine();
                 System.out.println("Please enter Name: ");
                 name = input.nextLine();
-                junk = input.nextLine();
+             
                 System.out.println("Please enter Manufacturer Name: ");
                 manufacName = input.nextLine();
-                junk = input.nextLine();
+                
                 System.out.println("Please enter Engine Size: ");
                 engineSize = input.nextLine();
-                junk = input.nextLine();
+                
                 System.out.println("Please enter color: ");
                 color = input.nextLine();
-                junk = input.nextLine();
                 
                 Vehicle car1 = new Car(year,engineHP,name,manufacName,engineSize,color);
                 
                 garage[counter] = car1.toString();
-                
+                //System.out.println(option);
+                //System.out.println(garage[0]);
                 break;
             
             case 2:  
@@ -75,21 +75,21 @@ public class AbstractionDemo {
                 junk = input.nextLine();
                 System.out.println("Please enter Name: ");
                 name = input.nextLine();
-                junk = input.nextLine();
+             
                 System.out.println("Please enter Manufacturer Name: ");
                 manufacName = input.nextLine();
-                junk = input.nextLine();
+                
                 System.out.println("Please enter Engine Size: ");
                 engineSize = input.nextLine();
-                junk = input.nextLine();
+                
                 System.out.println("Please enter color: ");
                 color = input.nextLine();
-                junk = input.nextLine();
                 
                 Vehicle motorcycle1 = new Motorcycle(year,engineHP,name,manufacName,engineSize,color);
                 
                 garage[counter] = motorcycle1.toString();
-                
+                //System.out.println(option);
+                //System.out.println(motorcycle1.toString());
                 break;
             
             case 3:
@@ -102,21 +102,25 @@ public class AbstractionDemo {
                 junk = input.nextLine();
                 System.out.println("Please enter Name: ");
                 name = input.nextLine();
-                junk = input.nextLine();
+             
                 System.out.println("Please enter Manufacturer Name: ");
                 manufacName = input.nextLine();
-                junk = input.nextLine();
+                
                 System.out.println("Please enter Engine Size: ");
                 engineSize = input.nextLine();
-                junk = input.nextLine();
+                
                 System.out.println("Please enter color: ");
                 color = input.nextLine();
-                junk = input.nextLine();
+                
                 
                 Vehicle boat1 = new Boat(year,engineHP,name,manufacName,engineSize,color);
                 
                 garage[counter] = boat1.toString();
-                
+                //System.out.println(option);
+                //System.out.println(boat1.toString());
+                break;
+            default:
+                System.out.println("Thanks for Sharing");
                 break;
                 
         }
@@ -126,10 +130,13 @@ public class AbstractionDemo {
         
         
         
-    }while(option > 3 && option < 1);    
+    }while(option <= 3 && option >= 1);    
     
-    
-    
+        System.out.println("Your Garage has: ");
+    for(int i =0;i<=counter;i++){
+        System.out.println(garage[i]);
+        
+    }
     
         
     }

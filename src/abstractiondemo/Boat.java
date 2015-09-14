@@ -79,7 +79,7 @@ public class Boat implements Vehicle{
 
     @Override
     public String toString() {
-        return "Boat{" + "year=" + year + ", engineHP=" + engineHP + ", name=" + name + ", manufacName=" + manufacName + ", engineSize=" + engineSize + ", color=" + color + '}';
+        return "Boat{" + year +" "+ color +" "+manufacName +" "+ name + " with a(n) " + engineSize + " making " + engineHP + "HP"+ '}';
     }
 
     

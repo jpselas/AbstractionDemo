@@ -81,7 +81,7 @@ public class Car implements Vehicle{
 
     @Override
     public String toString() {
-        return "Car{" + "year=" + year + ", engineHP=" + engineHP + ", name=" + name + ", manufacName=" + manufacName + ", engineSize=" + engineSize + ", color=" + color + '}';
+        return "Car{" + year +" "+ color +" "+manufacName +" "+ name + " with a(n) " + engineSize + " making " + engineHP + "HP"+ '}';
     }
 
     

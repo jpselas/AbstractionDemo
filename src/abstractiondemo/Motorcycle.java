@@ -78,7 +78,7 @@ public class Motorcycle implements Vehicle{
 
     @Override
     public String toString() {
-        return "Motorcycle{" + "year=" + year + ", engineHP=" + engineHP + ", name=" + name + ", manufacName=" + manufacName + ", engineSize=" + engineSize + ", color=" + color + '}';
+        return "Motorcycle{" + year +" "+ color +" "+manufacName +" "+ name + " with a(n) " + engineSize + " making " + engineHP + "HP"+ '}';
     }
 
     

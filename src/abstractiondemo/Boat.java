@@ -9,23 +9,25 @@ package abstractiondemo;
  *
  * @author johnny
  */
-public class Boat implements Vehicle{
+public class Boat extends WaterVehicle{
     private int year;
     private int engineHP;
     private String name;
     private String manufacName;
     private String engineSize;
     private String color;
+    private int numOfPeople;
     public Boat() {
     }
 
-    public Boat(int year, int engineHP, String name, String manufacName, String engineSize, String color) {
+    public Boat(int year, int engineHP, String name, String manufacName, String engineSize, String color,int numOfPeople) {
         this.year = year;
         this.engineHP = engineHP;
         this.name = name;
         this.manufacName = manufacName;
         this.engineSize = engineSize;
         this.color = color;
+        this.numOfPeople = numOfPeople;
     }
 
    @Override
@@ -79,7 +81,7 @@ public class Boat implements Vehicle{
 
     @Override
     public String toString() {
-        return "Boat{" + year +" "+ color +" "+manufacName +" "+ name + " with a(n) " + engineSize + " making " + engineHP + "HP"+ '}';
+        return "Boat{" + year +" "+ color +" "+manufacName +" "+ name + " with a(n) " + engineSize + " making " + engineHP + "HP"+ " with an max occupancy of " + numOfPeople +'}';
     }
 
     

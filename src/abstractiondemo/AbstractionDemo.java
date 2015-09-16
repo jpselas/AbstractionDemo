@@ -22,6 +22,7 @@ public class AbstractionDemo {
     int counter = -1;
     int year;
     int engineHP;
+    int numOfPeople;
     String name;
     String manufacName;
     String engineSize;
@@ -112,8 +113,10 @@ public class AbstractionDemo {
                 System.out.println("Please enter color: ");
                 color = input.nextLine();
                 
-                
-                Vehicle boat1 = new Boat(year,engineHP,name,manufacName,engineSize,color);
+                System.out.println("Please enter Max Occupancy: ");
+                numOfPeople = input.nextInt();
+                junk = input.nextLine();
+                WaterVehicle boat1 = new Boat(year,engineHP,name,manufacName,engineSize,color,numOfPeople);
                 
                 garage[counter] = boat1.toString();
                 //System.out.println(option);
